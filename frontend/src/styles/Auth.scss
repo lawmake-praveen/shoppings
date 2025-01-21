@@ -1,0 +1,32 @@
+@use "./Common.scss" as *;
+
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 92vh;
+
+  .auth-container {
+    background-color: $white-bg;
+    width: clamp(300px, 90%, 500px);
+    padding: 30px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .bottom-text {
+      font-size: 12px;
+      text-align: right;
+
+      .link {
+        color: blue;
+        cursor: pointer;
+      }
+      .link:hover {
+        text-decoration: underline;
+
+      }
+    }
+  }
+}
