@@ -9,7 +9,7 @@ export const BASE_URL = "http://localhost:3308/";
 //   },
 // };
 
-const headers = {
+export const headers = {
   accept: "application/json",
   "Content-Type": "application/json",
 };
@@ -41,3 +41,13 @@ export const RegisterApi = async (body) => {
     return null;
   }
 };
+
+// const AuthSlice = createSlice({
+//   name: 'auth',
+//   initialState,
+//   extraReducers: (builder) => {
+//     builder.addCase()
+//   }
+// })
+
+// export default AuthSlice.reducer
